@@ -1,0 +1,24 @@
+.difficulty {
+  text-align: center;
+}
+
+.active-difficulty {
+  color: #ff8000;
+  border: 2px solid #ff8000 !important;
+  font-size: 20px !important;
+}
+
+.StatsController {
+  margin: 10px;
+}
+
+.diff {
+  background-color: #111;
+  margin: 10px;
+  border: 1px solid white;
+  line-height: 40px;
+}
+
+.diff p {
+  margin: 0px;
+}

@@ -1,0 +1,16 @@
+.search {
+  margin-top: 10px;
+  margin-bottom: 70px;
+}
+
+.custom-input {
+  border: 1px solid white;
+    background-color: #111;
+    color: white;
+    border-radius: 0px;
+}
+
+.custom-button {
+  background-color: white;
+  color: #222;
+}
