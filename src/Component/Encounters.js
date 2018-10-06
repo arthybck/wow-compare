@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import EncounterDetailsController from './EncounterDetailsController'
+import EncounterDetails from './EncounterDetails'
 
-class EncountersController extends Component {
+class Encounters extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -12,7 +12,7 @@ class EncountersController extends Component {
   render() {
     let encounters = [];
     this.props.data.forEach((encounter, i) => {
-      encounters.push(<EncounterDetailsController key={i} data={encounter}/>)
+      encounters.push(<EncounterDetails key={i} data={encounter}/>)
     })
 
     return (
@@ -23,4 +23,4 @@ class EncountersController extends Component {
   }
 }
 
-export default EncountersController;
+export default Encounters;

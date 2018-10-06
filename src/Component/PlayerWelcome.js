@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './PlayerWelcome.css';
+import '../Style/PlayerWelcome.css';
 
 class StatsController extends Component {
   constructor(props) {

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import EncountersController from './EncountersController';
-import './StatsController.css';
+import Encounters from './Encounters';
+import '../Style/Stats.css';
 
-class StatsController extends Component {
+class Stats extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -40,11 +40,11 @@ class StatsController extends Component {
           </div>
         </div>
         <div className="row">
-          <EncountersController data={dataToDisplay} />
+          <Encounters data={dataToDisplay} />
         </div>
       </div>
     );
   }
 }
 
-export default StatsController;
+export default Stats;

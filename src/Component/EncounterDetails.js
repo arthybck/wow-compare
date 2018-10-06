@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import "./EncounterDetailsController.css";
+import "../Style/EncounterDetails.css";
 
-class EncounterDetailsController extends Component {
+class EncounterDetails extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -66,7 +66,7 @@ getOpacity() {
 
         return (
           <div className="col-md-4" style={{opacity: this.getOpacity()}}>
-            <div className="encounter" style={{backgroundImage: this.getBackground()}}>
+            <div className="encounter" /*style={{backgroundImage: this.getBackground()}}*/>
               <div>
                 <h3>{this.props.data.encouterName}</h3>
                 {this.whattorender(this.props.data.maxTotal)}
@@ -77,4 +77,4 @@ getOpacity() {
   }
 }
 
-export default EncounterDetailsController;
+export default EncounterDetails;

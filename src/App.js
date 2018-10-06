@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './App.css';
-import StatsController from './StatsController';
-import PlayerWelcome from './PlayerWelcome';
-import Search from './Search';
+import './Style/App.css';
+import Stats from './Component/Stats';
+import PlayerWelcome from './Component/PlayerWelcome';
+import Search from './Component/Search';
 const querystring = require('querystring');
 
 class App extends Component {
@@ -147,7 +147,7 @@ class App extends Component {
     var _statsController = null;
     var _playerWelcome = null;
     if (this.state.data != null) {
-      _statsController = <StatsController data={this.state.data}/>
+      _statsController = <Stats data={this.state.data}/>
       _playerWelcome = <PlayerWelcome player={this.getSpecPlayed()}/>
     }
 
