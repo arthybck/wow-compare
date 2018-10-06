@@ -3,6 +3,7 @@ import './Style/App.css';
 import Stats from './Component/Stats';
 import PlayerWelcome from './Component/PlayerWelcome';
 import Search from './Component/Search';
+import Footer from './Component/Footer';
 const querystring = require('querystring');
 
 class App extends Component {
@@ -160,7 +161,7 @@ class App extends Component {
       </div>
       {_playerWelcome}
       {_statsController}
-
+      <Footer />
     </div>
   );
 }
